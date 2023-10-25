@@ -27,7 +27,7 @@ class Controlador:
         historia, info_clase = self.obtener_historia_y_info(clase_elegida)
         self.vista.mostrar_historia_y_info(historia, info_clase)
         self.vista.mostrar_mensaje(f"Has elegido la clase {clase_elegida.nombre}. ¡Buena suerte!")
-
+    # TODO: Cambiar el texto y ponerlo todo en view para mayor lectura.
     def obtener_historia_y_info(self, clase_elegida):
         if isinstance(clase_elegida, Orco):
             historia = "Eres un Orco solitario que ha vivido toda su vida en las montañas, alejado de la sociedad, sin emociones."
