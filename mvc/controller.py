@@ -27,15 +27,15 @@ class Controlador:
         historia, info_clase = self.obtener_historia_y_info(clase_elegida)
         self.vista.mostrar_historia_y_info(historia, info_clase)
         self.vista.mostrar_mensaje(f"Has elegido la clase {clase_elegida.nombre}. ¡Buena suerte!")
-    # TODO: Cambiar el texto y ponerlo todo en view para mayor lectura.
+
+
     def obtener_historia_y_info(self, clase_elegida):
         if isinstance(clase_elegida, Orco):
-            historia = "Eres un Orco solitario que ha vivido toda su vida en las montañas, alejado de la sociedad, sin emociones."
+            historia = Vista.obtener_historia_orco()
         elif isinstance(clase_elegida, Arquero):
-            historia = "Eres un Arquero que ha crecido en el bosque, rodeado de risas, animales y buena compañía."
+            historia = Vista.obtener_historia_arquero()
         elif isinstance(clase_elegida, Guerrero):
-            historia = "Eres un Guerrero criado en un poblado. Tu padre era un herrero, y has aprendido el arte de la espada."
+            historia = Vista.obtener_historia_guerrero()
         
         info_clase = f"Vida: {clase_elegida.vida}, Daño: {clase_elegida.daño}"
         return historia, info_clase
-

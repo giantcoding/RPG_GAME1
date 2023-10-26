@@ -24,3 +24,14 @@ class Vista:
     def mostrar_mensaje(mensaje):
         print(mensaje)
 
+    @staticmethod
+    def obtener_historia_orco():
+        return "Eres un Orco solitario que ha vivido toda su vida en las montañas, alejado de la sociedad, sin emociones."
+
+    @staticmethod
+    def obtener_historia_arquero():
+        return "Eres un Arquero que ha crecido en el bosque, rodeado de risas, animales y buena compañía."
+
+    @staticmethod
+    def obtener_historia_guerrero():
+        return "Eres un Guerrero criado en un poblado. Tu padre era un herrero, y has aprendido el arte de la espada."
